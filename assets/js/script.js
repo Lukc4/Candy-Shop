@@ -1,6 +1,8 @@
 document.getElementById("btn__iniciar-sesion").addEventListener("click", iniciarSesion);
 document.getElementById("btn__registrarse").addEventListener("click", register);
 window.addEventListener("resize", anchoPagina);
+//window.getElementById("button__registrarse").addEventListener("click", redireccionar);
+//window.getElementById("button__entrar").addEventListener("click", redireccionar);
 
 //declaracion de variables
 
@@ -63,3 +65,8 @@ function register() {
 	caja_trasera_login.style.opacity = "1";
 		}
 	}
+
+
+/*function redireccionar(){
+	window.location = "../index.php"
+}*/

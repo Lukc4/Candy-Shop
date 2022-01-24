@@ -9,8 +9,10 @@
 	$password = $_POST['password'];
 	
 	//password encriptada
-	$password = password_hash($password, PASSWORD_BCRYPT); 
+	
+	$password = sha1($password);
 
+	//$password = password_hash($password, PASSWORD_BCRYPT); 
 	//hash('sha512', $password);
 
 	$query = "INSERT INTO usuarios(nombre_completo, correo, usuario, password)

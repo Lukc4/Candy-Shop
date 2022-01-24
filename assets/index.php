@@ -30,7 +30,7 @@
 						<h2>Iniciar sesion</h2>
 						<input type="text" placeholder="Correo Electronico" name="correo" required>
 						<input type="password" placeholder="Password" name="password" required>
-						<button>Entrar</button>
+						<button id="button__entrar">Entrar</button>
 					</form>
 					<!--Registro -->
 					<form class="formulario__register" action="php/registro_usuario_be.php" method="POST">
@@ -40,7 +40,7 @@
 						<input type="text" placeholder="Correo Electronico" name="correo" required>
 						<input type="text" placeholder="Usuario" name="usuario" required>
 						<input type="password" placeholder="Password" name="password" required>
-						<button>Registrarse</button>
+						<button id="button__registrarse">Registrarse</button>
 					</form>
 				</div>
 
