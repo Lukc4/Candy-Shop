@@ -27,7 +27,7 @@
 		echo '
 			<script>
 				alert("Este correo ya esta registrado, intenta con otro diferente");
-				window.location = "../index.php";
+				window.location = "../../index.php";
 			</script>
 		';
 		exit();
@@ -42,7 +42,7 @@
 		echo '
 			<script>
 				alert("Este nombre de usuario ya esta registrado, intenta con otro diferente");
-				window.location = "../index.php";
+				window.location = "../../index.php";
 			</script>
 		';
 		exit();
@@ -55,18 +55,29 @@
 		echo '
 		<script>
 			alert("Usuario registrado exitosamente");
-			window.location = "../index.php"
+			window.location = "../../index.php"
 		</script>
 		';
 	}else{
 		echo '
 		<script>
 			alert("Ups! Algo salio mal, intentalo de nuevo.");
-			window.location = "../index.php"
+			window.location = "../../index.php"
 		</script>
 		';
 	}
 
 	mysqli_close($conexion);
 
+
+
+//redireccionar
+
+	function Redireccionar($url){
+        $Page = '<META HTTP-EQUIV="REFRESH" CONTENT="0;URL='.$url.'">';
+       echo $Page;
+    }
+
+
 ?>
+

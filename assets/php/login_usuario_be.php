@@ -10,13 +10,13 @@
 	and password = '$password_encriptada'");
 
 	if (mysqli_num_rows($validar_login) > 0) {
-		header("Location: http://localhost/proyectos/candy-shop/assets/bienvenida.php");
+		header("Location: ../../bienvenida.php");
 		exit;
 	}else{
 		echo '
 			<script>
 				alert("Usuario no existe, por favor verificar los datos introducidos");
-				window.location = "../index.php";
+				window.location = "../../index.php";
 			</script>
 		';
 		exit;
