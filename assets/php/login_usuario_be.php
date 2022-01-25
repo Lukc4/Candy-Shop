@@ -1,5 +1,8 @@
 <?php 
 
+
+	session_start();
+
 	include 'conexion_be.php';
 
 	$correo = $_POST['correo'];
@@ -10,6 +13,7 @@
 	and password = '$password_encriptada'");
 
 	if (mysqli_num_rows($validar_login) > 0) {
+		$_SESSION['usuario'] = $correo;
 		header("Location: ../../bienvenida.php");
 		exit;
 	}else{
